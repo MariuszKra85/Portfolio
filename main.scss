@@ -1,0 +1,25 @@
+@import "./node_modules/normalize.css/normalize.css";
+@import "./style/mixin.scss";
+@import "./style/variables.scss";
+@import "./style/animation.scss";
+@import "./style/header.scss";
+@import "./style/hero.scss";
+@import "./style/portfolio.scss";
+
+@media (min-width: 400px) {
+  * {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: $font-base-color;
+    list-style: none;
+  }
+  body {
+    background-color: $base-color;
+  }
+  .hidden {
+    display: none;
+  }
+}

@@ -1,0 +1,44 @@
+@media (min-width: 400px) {
+  .portfolio {
+    @include flex();
+    width: 400px;
+    margin: 5px;
+    border: 1px solid red;
+
+    .item {
+      @include flex();
+      margin: 5px;
+      width: 350px;
+
+      &__img {
+        transition: all 0.5s;
+        filter: grayscale(0.8);
+        width: 250px;
+        height: 200px;
+      }
+      &__img:hover {
+        width: 300px;
+        height: 250px;
+        filter: grayscale(0);
+      }
+      &__desc {
+        @include flex();
+      }
+      &__title {
+        font-size: $large;
+      }
+      &__text {
+        font-size: $medium;
+      }
+      &__tech {
+        @include flex(row);
+      }
+      &__tech_desc {
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 40px;
+        border: 1px solid $first-color;
+      }
+    }
+  }
+}

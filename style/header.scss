@@ -1,0 +1,59 @@
+@media (min-width: 400px) {
+  .header {
+    min-width: 390px;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: $base-color;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      &__title {
+        margin: 5px 0px 5px 15px;
+        font-size: $large;
+      }
+
+      &__title::first-letter {
+        color: $first-color;
+      }
+
+      &__subtitle {
+        color: $font-second-color;
+        margin: 0 5px 0 15px;
+        font-size: $medium;
+        span {
+          color: $first-color;
+        }
+      }
+    }
+
+    .nav {
+      display: flex;
+      padding-right: 10px;
+      align-items: center;
+
+      &__list {
+        @include flex(row);
+      }
+
+      &__item {
+        background-color: $base-color;
+
+        padding: 0 5px;
+      }
+      &__item__logo:hover {
+        cursor: pointer;
+      }
+
+      &__item__logo {
+        margin-bottom: 5px;
+        align-self: center;
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+}

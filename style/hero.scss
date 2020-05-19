@@ -1,0 +1,25 @@
+@media (min-width: 400px) {
+  .hero {
+    position: relative;
+    font-size: $x-large;
+    top: 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 20px;
+
+    &__subtitle {
+      font-size: $large;
+      span {
+        color: $first-color;
+      }
+    }
+
+    &__text {
+      font-size: $medium;
+      color: $font-second-color;
+    }
+  }
+}
