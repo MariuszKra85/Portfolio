@@ -1,4 +1,4 @@
-@import "./node_modules/normalize.css/normalize.css";
+@import "./style/normalize.css";
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -148,7 +148,7 @@
     border: 1px solid #e14646;
   }
 }
-@media (min-width: 400px) {
+@media (min-width: 350px) {
   .aboutme {
     display: flex;
     flex-direction: column;
@@ -173,6 +173,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
   .aboutme .materials__item {
@@ -181,8 +182,55 @@
     padding: 5px;
     border: 1px solid #ffb821;
   }
+  .aboutme__technology {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .technology__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+  }
+  .technology__item_text {
+    height: 60px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  .technology__item_text:hover {
+    opacity: 1;
+  }
+  .technology__item:hover {
+    background-color: #2a313c;
+    background-blend-mode: soft-light;
+  }
 }
 @media (min-width: 400px) {
+  .contact__data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__title {
+    font-size: 22px;
+  }
+  .contact__title::first-letter {
+    color: #e14646;
+  }
+  .contact__details {
+    width: 200px;
+    padding: 20px;
+  }
+  .contact__text {
+    font-size: 14px;
+  }
   .contact__form {
     display: flex;
     flex-direction: column;
@@ -190,38 +238,39 @@
     margin-bottom: 30px;
   }
   .contact__form_field {
-    margin: 10px;
+    padding: 5px;
     width: 300px;
     height: 30px;
     border: none;
-  }
-  .contact__form_field {
     font-size: 14px;
   }
+  .contact__form_label {
+    margin: 5px;
+    font-size: 8px;
+  }
   .contact__form_text {
+    padding: 5px;
     width: 300px;
     height: 120px;
     font-size: 14px;
   }
 }
-@media (min-width: 400px) {
-  * {
-    font-family: "Montserrat", sans-serif;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    color: #ffffff;
-    list-style: none;
-  }
+* {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  list-style: none;
+}
 
-  body {
-    background-color: #2a313c;
-  }
+body {
+  background-color: #2a313c;
+}
 
-  .hidden {
-    display: none;
-  }
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */

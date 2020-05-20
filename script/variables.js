@@ -13,6 +13,16 @@ const site = [
       "Labore quis sit consequat proident laboris incididunt. Ipsum laborum occaecat dolor enim laboris qui incididunt incididunt tempor irure aute ipsum eu. Sit ea aute officia sit officia pariatur voluptate voluptate aute aliqua. Dolore fugiat dolor minim cupidatat enim pariatur dolor non.",
     tech: ["html", "css", "js"],
   },
-]
+];
+const tech = [
+  "html",
+  "javascript",
+  "css3",
+  "bootstrap",
+  "mongodb",
+  "firebase",
+  "node-sass",
+  "nodejs",
+];
 
-export {site}
+export { site, tech };

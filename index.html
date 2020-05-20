@@ -21,16 +21,20 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a
-              target="_blank"
-              href="https://github.com/MariuszKra85/MariuszKra85.github.io"
-            >
-              <img class="nav__item__logo" src="./asset/img/github-1.svg" />
+            <a target="_blank" href="https://github.com/MariuszKra85">
+              <img
+                class="nav__item__logo"
+                src="./asset/logo/github.svg"
+                alt="github logo"
+              />
             </a>
           </li>
           <li class="nav__item">
             <a href="http://linkin.com"
-              ><img class="nav__item__logo" src="./asset/img/linkedin-icon.svg"
+              ><img
+                class="nav__item__logo"
+                src="./asset/logo/linkedin-icon.svg"
+                alt="linkedin logo"
             /></a>
           </li>
           <li class="nav__item"><a href="#contact">contact</a></li>
@@ -56,24 +60,31 @@
         anim ullamco nisi exercitation.
       </p>
       <div class="aboutme__materials">
-        <p class="materials__item">CV</p>
-        <p class="materials__item">GitHUB</p>
+        <a class="materials__item">CV</a>
+        <a
+          target="_blank"
+          href="https://github.com/MariuszKra85"
+          class="materials__item"
+          >GitHUB</a
+        >
       </div>
-      <div class="aboutme__technology">lalala</div>
+      <div class="aboutme__technology" id="aboutme__technology"></div>
     </section>
-
     <section class="contact">
       <div class="contact__data">
-        <h3 class="data__title">Contact</h3>
+        <h3 class="contact__title">Contact</h3>
         <p class="contact__text">
           Lorem duis tempor Lorem commodo do velit sit culpa nisi esse ad
           proident. In occaecat qui ut dolore ex ut anim laboris cupidatat
-          laborum ex. Sint aute fugiat irure magna in excepteur dolor proident
-          fugiat irure officia ea adipisicing. Excepteur nisi ea excepteur
-          consequat enim labore irure adipisicing magna. Nulla velit ut deserunt
-          voluptate Lorem pariatur tempor elit culpa sint minim minim.
         </p>
+        <div class="contact__details">
+          <p class="contact__text">jm2017may@gmail.com</p>
+        </div>
+        <div class="contact__details">
+          <p class="contact__text">+447956769795</p>
+        </div>
       </div>
+
       <div class="contact__form">
         <label for="name" class="contact__form_label">Name</label>
         <input
@@ -101,6 +112,7 @@
           type="text"
           id="message"
           class="contact__form_text"
+          placeholder="Text"
         ></textarea>
       </div>
     </section>

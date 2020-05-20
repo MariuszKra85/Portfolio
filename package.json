@@ -1,0 +1,28 @@
+{
+  "name": "portfolio2020",
+  "version": "1.0.0",
+  "description": "my portfiolio v1",
+  "main": "fadein.js",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariuszKra85/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "Mariusz Krawczyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariuszKra85/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MariuszKra85/Portfolio#readme"
+}

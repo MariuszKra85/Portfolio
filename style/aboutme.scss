@@ -1,4 +1,4 @@
-@media (min-width: 400px) {
+@media (min-width: 350px) {
   .aboutme {
     @include flex();
 
@@ -19,6 +19,7 @@
     &__materials {
       width: 300px;
       @include flex(row);
+      flex-wrap: wrap;
       justify-content: space-between;
     }
     .materials__item {
@@ -27,5 +28,38 @@
       padding: 5px;
       border: 1px solid $second-color;
     }
+    &__technology {
+      width: 350px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @mixin bg_technology {
+    @include flex();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+
+    &_text {
+      height: 60px;
+      opacity: 0;
+      transition: opacity 1s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &:hover {
+      background-color: $base-color;
+      background-blend-mode: soft-light;
+    }
+  }
+
+  .technology__item {
+    @include bg_technology();
+    margin: 20px;
   }
 }

@@ -1,22 +1,44 @@
 @media (min-width: 400px) {
   .contact {
+    &__data {
+      @include flex();
+    }
+    &__title {
+      font-size: $large;
+
+      &::first-letter {
+        color: $first-color;
+      }
+    }
+    &__details {
+      width: 200px;
+      padding: 20px;
+    }
+
+    &__text {
+      font-size: $medium;
+    }
+
     &__form {
       @include flex();
       margin-bottom: 30px;
       &_field {
-        margin: 10px;
+        padding: 5px;
         width: 300px;
         height: 30px;
         border: none;
+        font-size: $medium;
       }
-    }
-    &__form_field {
-      font-size: $medium;
-    }
-    &__form_text {
-      width: 300px;
-      height: 120px;
-      font-size: $medium;
+      &_label {
+        margin: 5px;
+        font-size: $small;
+      }
+      &_text {
+        padding: 5px;
+        width: 300px;
+        height: 120px;
+        font-size: $medium;
+      }
     }
   }
 }
